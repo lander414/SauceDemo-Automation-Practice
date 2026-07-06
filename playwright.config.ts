@@ -1,6 +1,7 @@
-import { defineConfig } from '@playwright/test';
+import { defineConfig, devices } from '@playwright/test';
+import dotenv from 'dotenv';
 
-declare const process: { env: { BASE_URL?: string } };
+dotenv.config();
 
 export default defineConfig({
   testDir: './e2e',
