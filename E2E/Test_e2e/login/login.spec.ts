@@ -27,7 +27,7 @@ test('login with valid credentials', async ({ page }) => {
   await expect(page.getByText('Swag Labs')).toBeVisible();
 });
 
-test('login with invalid credentials', async ({ page }) => {
+test('Login with invalid credentials(Recorded)', async ({ page }) => {
   await page.goto('/');
   await page.getByPlaceholder('Username').fill('invalid_user');   
   await page.getByPlaceholder('Password').fill('invalid_pass');
